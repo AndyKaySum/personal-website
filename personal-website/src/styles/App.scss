@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.app-body {
+    height: 100%;
+    background-color: $neutral-mid;
+    //background-image: url("https://media.wbur.org/wp/2022/07/main_image_star-forming_region_carina_nircam_final-5mb.jpeg");
+}

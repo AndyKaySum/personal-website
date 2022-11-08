@@ -1,0 +1,52 @@
+.project-page {
+    height: 100vh;
+    //background-color: grey;
+
+    display: flex;
+    align-items: center;
+
+    .project-container {
+        background-color: $neutral-light;
+        //margin: 50%;
+        height: fit-content;
+        width: fit-content;
+        padding: 20px;
+        margin: auto;
+
+        border-radius: 4px;
+    }
+
+    .project-item {
+        min-height: fit-content;
+        min-width: fit-content;
+        background-color: $neutral-dark;
+        color: $neutral-light;
+
+        border: 2px solid $neutral-mid;
+        border-radius: 4px;
+        padding: 4px;
+        margin: 2px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            background-color: $neutral-light;
+            
+            color: $neutral-dark;
+            border-color: $neutral-dark;
+        }
+    }
+}

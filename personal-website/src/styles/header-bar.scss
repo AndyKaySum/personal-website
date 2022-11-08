@@ -1,0 +1,70 @@
+.header-bar {
+    display: flex;
+    justify-content: center;
+    //flex-direction: column;
+
+    //box-shadow: inset 1px 1px 10px gray;
+    height: 40px;
+    width: 100%;
+    
+    background-color: $neutral-light;
+    //background: $gradient-from;
+    //background: linear-gradient(90deg, $gradient-from 0%, $gradient-to 100%);
+    //opacity: 90%;
+
+    position: fixed;
+    top: 0;
+
+    button {
+        color: $neutral-light;
+        background-color: $neutral-dark;
+        padding: 0 16px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 0px;
+
+        border: $main-colour 0px solid;
+        border-radius: 0px;
+
+        &:hover {
+            //color: $main-saturated;//$neutral-dark;
+            background-color: $neutral-mid;
+            //border-color: $neutral-mid;
+        }
+
+        &.selected {
+            text-decoration: underline;
+            animation: side-to-side infinite 4s;
+        }
+        
+    }
+
+    @keyframes side-to-side {
+        0% {
+            left: 0;
+          }
+          50% {
+            left: 100%;
+          }
+          100% {
+            left: 0;    
+          }
+        
+    }
+
+    .logo-button {
+        position: fixed;
+        left: 0;
+        height: inherit;
+        //padding: 0 4px;
+        padding-left: 2px;
+
+        //background-color: rgb(255, 68, 68);
+
+        display: flex;
+        align-items: center;
+        
+        img {
+            height: 20px;
+        }
+    }
+}
